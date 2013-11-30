@@ -1,0 +1,108 @@
+//基础变量
+
+@c-darker:            lighten(#000, 13.5%); // #222
+@c-dark:              lighten(#000, 20%);   // #333
+@c:                   lighten(#000, 33.5%); // #555
+@c-light:             lighten(#000, 60%);   // #999
+@c-lighter:           lighten(#000, 93.5%); // #eee
+
+// Brand colors
+// -------------------------
+
+@bgc-default:         #428bca;
+@bgc-primary:         #428bca;
+@bgc-success:         #5cb85c;
+@bgc-warning:         #f0ad4e;
+@bgc-danger:          #d9534f;
+@bgc-info:            #5bc0de;
+
+// Scaffolding
+// -------------------------
+
+@body-bg:               #fff;
+@text-color:            @c-dark;
+
+// Links
+// -------------------------
+
+@link-color:            @bgc-primary;
+@link-hover-color:      darken(@link-color, 15%);
+
+// Media queries 分布
+// --------------------------------------------------
+
+// 超小屏 / phone
+@screen-xs:                  480px;
+@screen-phone:               @screen-xs;
+
+// 小屏 / tablet
+@screen-sm:                  768px;
+@screen-tablet:              @screen-sm;
+
+// 中屏 / desktop
+@screen-md:                  992px;
+@screen-desktop:             @screen-md;
+
+// 大屏 / wide desktop
+@screen-lg:                  1200px;
+@screen-lg-desktop:          @screen-lg;
+
+// 每段屏的分界点
+@screen-xs-max:              (@screen-sm - 1);
+@screen-sm-max:              (@screen-md - 1);
+@screen-md-max:              (@screen-lg - 1);
+
+// 网格
+// --------------------------------------------------
+
+// Number of columns in the grid system
+@grid-columns:              12;
+// Padding, to be divided by two and applied to the left and right of all columns
+@grid-gutter-width:         30px;
+// Point at which the navbar stops collapsing
+@grid-float-breakpoint:     @screen-tablet;
+
+// table
+// --------------------------------------------------
+@table-border-color:        #ddd;
+
+// Form states and alerts
+// -------------------------
+
+@primary-text:             #4878b9;
+@primary-bg:               #ecf3fa;
+@primary-border:           darken(spin(@primary-bg, -10), 3%);
+
+@warning-text:             #c09853;
+@warning-bg:               #fcf8e3;
+@warning-border:           darken(spin(@warning-bg, -10), 3%);
+
+@danger-text:              #b94a48;
+@danger-bg:                #f2dede;
+@danger-border:            darken(spin(@danger-bg, -10), 3%);
+
+@success-text:             #468847;
+@success-bg:               #dff0d8;
+@success-border:           darken(spin(@success-bg, -10), 5%);
+
+@info-text:                #3a87ad;
+@info-bg:                  #d9edf7;
+@info-border:              darken(spin(@info-bg, -10), 7%);
+
+
+
+// padding
+// --------------------------------------------------
+@padding-base-vertical:          6px;
+@padding-base-horizontal:        12px;
+
+@padding-large-vertical:         10px;
+@padding-large-horizontal:       16px;
+
+@padding-small-vertical:         5px;
+@padding-small-horizontal:       10px;
+
+
+
+
+

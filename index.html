@@ -1,11 +1,950 @@
 <!doctype html>
 <html>
 <head>
+<meta charset="utf-8">
 <title>Likeweb</title>
-<link rel="stylesheet" href="css/likeweb.css">
-<script type="text/javascript" src="js/likeweb.js"></script>
+<link rel="stylesheet" href="css/likeui.css">
+<link rel="stylesheet" href="css/prism.css">
+<link rel="stylesheet" href="css/main-blue.css">
+<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+<![endif]-->
 </head>
 <body>
-	
+<div id="mlsidemenu">
+	<ul>
+		<li><a href="#logo" title="LikeUI">LikeUI</a></li>
+		<li><a href="#base" title="基础">基础</a></li>
+		<li><a href="#grids" title="网格">网格</a></li>
+		<li><a href="#forms" title="表单">表单</a></li>
+		<li><a href="#buttons" title="按钮">按钮</a></li>
+		<li><a href="#tables" title="表格">表格</a></li>
+		<li><a href="#menus" title="菜单">菜单</a></li>
+	</ul>
+</div>
+<div id="mlcontent">
+	<h1 id="logo">LikeUI</h1>
+	<p id="webinfo">小型而又丰富的响应式前端UI模板，使用简单，可以用到你的任何网站当中！</p>
+	<div class="wapper">
+<pre><code class="language-markup">&lt;link rel="stylesheet" href="css/main-blue.css">
+</code></pre>
+		<p>这里还有待整理</p>
+	</div>
+	<h2 id="base" class="mltitle">基础</h2>
+	<p class="mltitleinfo">各种标签的基本样式介绍。</p>
+	<div class="wapper">
+		<p>这里还有待整理</p>
+	</div>
+	<h2 id="grids" class="mltitle">网络</h2>
+	<p class="mltitleinfo">网格布局介绍，以及响应式的设定。</p>
+	<div class="wapper">
+		<p>LikeUI 的排版是12例网格的，并且分为Sx、Ss、Sm、Sl四类，对应这不同宽度的响应式，他们的关系如下表所示：</p>
+		<table class="table-TwTnTbrTs">
+			<thead>
+				<tr>
+					<th></th>
+					<th>特小尺寸屏幕（手机）<br />with < 768px</th>
+					<th>小尺寸屏幕（平板）<br />with ≥ 768px</th>
+					<th>中尺寸屏幕（老显示器）<br />with ≥ 992px</th>
+					<th>大尺寸屏幕（新显示器）<br />with ≥ 1200px</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th>网格特点</th>
+					<td>稳固宽度</td>
+					<td colspan="3">到达临界点则会变化</td>
+				</tr>
+				<tr>
+					<th>临界宽度</th>
+					<td>没有</td>
+					<td>750px</td>
+					<td>970px</td>
+					<td>1170px</td>
+				</tr>
+				<tr>
+					<th>class 前缀</th>
+					<td>Sx</td>
+					<td>Ss</td>
+					<td>Sm</td>
+					<td>Sl</td>
+				</tr>
+				<tr>
+					<th>网格列数</th>
+					<td colspan="4">12列</td>
+				</tr>
+				<tr>
+					<th>嵌套支持</th>
+					<td colspan="4">支持</td>
+				</tr>
+			</tbody>
+		</table>
+		<div class="row" style="margin-top:15px;">
+			<div class="row">
+				<div class="span-Sm12" style="background-color:#ddd;">span-Sm12</div>
+			</div>
+			<div class="row" style="margin-top:3px;">
+				<div class="span-Sm03" style="background-color:#ddd;">span-Sm03</div>
+				<div class="span-Sm09" style="background-color:#eee;">span-Sm09</div>
+			</div>
+			<div class="row" style="margin-top:3px;">
+				<div class="span-Sm04" style="background-color:#ddd;">span-Sm04</div>
+				<div class="span-Sm08" style="background-color:#eee;">span-Sm08</div>
+			</div>
+			<div class="row" style="margin-top:3px;">
+				<div class="span-Sm05" style="background-color:#ddd;">span-Sm05</div>
+				<div class="span-Sm07" style="background-color:#eee;">span-Sm07</div>
+			</div>
+			<div class="row" style="margin-top:3px;">
+				<div class="span-Sm06" style="background-color:#ddd;">span-Sm06</div>
+				<div class="span-Sm06" style="background-color:#eee;">span-Sm06</div>
+			</div>
+			<div class="row" style="margin-top:3px;">
+				<div class="span-Sm02" style="background-color:#ddd;">span-Sm02</div>
+				<div class="span-Sm02" style="background-color:#eee;">span-Sm02</div>
+				<div class="span-Sm02" style="background-color:#ddd;">span-Sm02</div>
+				<div class="span-Sm02" style="background-color:#eee;">span-Sm02</div>
+				<div class="span-Sm02" style="background-color:#ddd;">span-Sm02</div>
+				<div class="span-Sm02" style="background-color:#eee;">span-Sm02</div>
+			</div>
+			<div class="row" style="margin-top:3px;">
+				<div class="span-Sm01" style="background-color:#ddd;">span-Sm01</div>
+				<div class="span-Sm01" style="background-color:#eee;">span-Sm01</div>
+				<div class="span-Sm01" style="background-color:#ddd;">span-Sm01</div>
+				<div class="span-Sm01" style="background-color:#eee;">span-Sm01</div>
+				<div class="span-Sm01" style="background-color:#ddd;">span-Sm01</div>
+				<div class="span-Sm01" style="background-color:#eee;">span-Sm01</div>
+				<div class="span-Sm01" style="background-color:#ddd;">span-Sm01</div>
+				<div class="span-Sm01" style="background-color:#eee;">span-Sm01</div>
+				<div class="span-Sm01" style="background-color:#ddd;">span-Sm01</div>
+				<div class="span-Sm01" style="background-color:#eee;">span-Sm01</div>
+				<div class="span-Sm01" style="background-color:#ddd;">span-Sm01</div>
+				<div class="span-Sm01" style="background-color:#eee;">span-Sm01</div>
+			</div>
+		</div>
+		<div class="row" style="margin-top:15px;">
+			<div class="span-Sl02Sm04" style="background-color:#ddd;">span-Sl02Sm04</div>
+			<div class="span-Sl02Sm04" style="background-color:#eee;">span-Sl02Sm04</div>
+			<div class="span-Sl02Sm04" style="background-color:#ddd;">span-Sl02Sm04</div>
+			<div class="span-Sl02Sm04" style="background-color:#eee;">span-Sl02Sm04</div>
+			<div class="span-Sl02Sm04" style="background-color:#ddd;">span-Sl02Sm04</div>
+			<div class="span-Sl02Sm04" style="background-color:#eee;">span-Sl02Sm04</div>
+		</div>
+	</div>
+	<h2 id="forms" class="mltitle">表单</h2>
+	<p class="mltitleinfo">表单的各种组合，以及样式的介绍。</p>
+	<div class="wapper">
+		<input type="text" placeholder="type='text'">
+		<input type="password" placeholder="type='password'">
+		<label>
+			<input type="checkbox">记住密码
+		</label>
+		<input class="btn-Bgp" type="button" value="登 录">
+		<p>块状</p>
+		<div class="group-Db">
+			<legend>块状表单</legend>
+			<label for="">用户名</label>
+			<input type="text" placeholder="type='text'">
+			<label for="">密码</label>
+			<input type="password" placeholder="type='password'">
+			<label>
+				<input type="checkbox">记住密码
+			</label>
+			<input class="btn-Bgp" type="button" value="登 录">
+		</div>
+		<p>分组试</p>
+		<div class="group-DbwDmSm04">
+			<fieldset>
+				<input type="text" placeholder="type='text'">
+				<input type="password" placeholder="type='password'">
+				<input type="email" placeholder="type='email'">
+			</fieldset>
+		</div>
+		<div class="group-DbwDmSm04">
+			<fieldset>
+				<input type="text" placeholder="type='text'">
+				<input type="text" placeholder="type='text'">
+			</fieldset>
+		</div>
+		<input class="btn-BgpSm04" type="button" value="登 录">
+		<p>haohao</p>
+		<textarea class="form-Db" rows="3"></textarea>
+		<p>下拉</p>
+		<select>
+			<option>1</option>
+			<option>2</option>
+			<option>3</option>
+			<option>4</option>
+			<option>5</option>
+		</select>
+		<select multiple>
+			<option>1</option>
+			<option>2</option>
+			<option>3</option>
+			<option>4</option>
+			<option>5</option>
+		</select>
+		<p>单选钮</p>
+		<label><input type="radio" name="ex">选项1</label>
+		<label><input type="radio" name="ex">选项2</label>
+		<label><input type="radio" name="ex">选项3</label>
+		<p>表单组</p>
+		<div class="row">
+			<div class="group-Line">
+				<span class="addon">@</span>
+				<input type="text">
+			</div>
+			<div class="group-Line">
+				<input type="text">
+				<span class="addon">@</span>
+			</div>
+			<div class="group-Line">
+				<span class="addon">@</span>
+				<input type="text">
+				<span class="addon">@</span>
+			</div>
+		</div>
+		<div class="row">
+			<div class="group-Line">
+				<input type="text">
+				<input class="btn" type="button" value="搜索">
+			</div>
+			<div class="group-Line">
+				<input class="btn" type="button" value="搜索">
+				<input type="text">
+			</div>
+			<div class="group-Line">
+				<span class="addon">@</span>
+				<input type="text">
+				<input class="btn-Bgp" type="button" value="搜索">
+			</div>
+			<div class="group-Line">
+				<input class="btn-Bgp" type="button" value="搜索">
+				<input type="text">
+				<span class="addon">@</span>
+			</div>
+		</div>
+		<p>表单组大小</p>
+		<div class="row">
+			<div class="group-LineMl">
+				<input type="text">
+				<input class="btn" type="button" value="搜索">
+			</div>
+			<div class="group-LineMl">
+				<span class="addon">@</span>
+				<input type="text">
+				<input class="btn-Bgp" type="button" value="搜索">
+			</div></div>
+		<div class="row">
+			<div class="group-LineMs">
+				<input type="text">
+				<input class="btn" type="button" value="搜索">
+			</div>
+			<div class="group-LineMs">
+				<span class="addon">@</span>
+				<input type="text">
+				<input class="btn-Bgp" type="button" value="搜索">
+			</div>
+		</div>
+		<div class="row">
+			<div class="group-LineMx">
+				<input type="text">
+				<input class="btn" type="button" value="搜索">
+			</div>
+			<div class="group-LineMx">
+				<span class="addon">@</span>
+				<input type="text">
+				<input class="btn-Bgp" type="button" value="搜索">
+			</div>
+		</div>
+	</div>
+	<h2 id="buttons" class="mltitle">按钮</h2>
+	<p class="mltitleinfo">按钮是网站中不可或缺的元素，看看我们给你提供的方案。</p>
+	<div class="wapper">
+		<p>按钮可以有不同颜色</p>
+		<input class="btn" type="button" value="默认">
+		<input class="btn-Bgp" type="button" value="primary">
+		<input class="btn-Bgs" type="button" value="success">
+		<input class="btn-Bgw" type="button" value="warning">
+		<input class="btn-Bgd" type="button" value="danger">
+		<input class="btn-Bgi" type="button" value="info">
+		<p>按钮可以分组组织</p>
+		<div class="group-Line">
+			<input class="btn" type="button" value="默认">
+			<input class="btn-Bgp" type="button" value="primary">
+			<input class="btn-Bgs" type="button" value="success">
+			<input class="btn-Bgw" type="button" value="warning">
+		</div>
+		<div class="group-Line">
+			<input class="btn-Bgd" type="button" value="danger">
+			<input class="btn-Bgi" type="button" value="info">
+		</div>
+		<p>按钮有大小</p>
+		<input class="btn" type="button" value="默认">
+		<input class="btn-Ml" type="button" value="btn-Ml">
+		<input class="btn-Ms" type="button" value="btn-Ms">
+		<input class="btn-Mx" type="button" value="btn-Mx">
+		<p>按钮可通栏</p>
+		<div class="row">
+			<div class="span-Sm04">
+				<input class="btn-Db" type="button" value="btn-Db">
+				<input class="btn-DbMl" type="button" value="btn-DbMl">
+				<input class="btn-DbMlBgp" type="button" value="btn-DbMlBcp">
+			</div>
+		</div>
+		<p>按钮可激活</p>
+		<input class="btn active" type="button" value="btn">
+		<input class="btn-Bgp active" type="button" value="btn">
+		<p>按钮可无用</p>
+		<input class="btn disabled" type="button" value="btn">
+		<input class="btn-Bgp disabled" type="button" value="btn">
+		<p>按钮可不同标签</p>
+		<a class="btn" href="#">Link</a>
+		<button class="btn" type="submit">Button</button>
+		<input class="btn" type="button" value="Input">
+		<input class="btn" type="submit" value="Submit">
+	</div>
+	<h2 id="tables" class="mltitle">表格</h2>
+	<p class="mltitleinfo">表格的一些样式，总有一款适合你。</p>
+	<div class="wapper">
+		<table>
+			<thead>
+				<tr>
+					<th></th>
+					<th>前缀</th>
+					<th>后缀</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th>class</th>
+					<td>无</td>
+					<td>无</td>
+				</tr>
+				<tr>
+					<th>实例</th>
+					<td>小明</td>
+					<td>小红</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<th>说明</th>
+					<td>默认样式</td>
+					<td></td>
+				</tr>
+			</tfoot>
+		</table>
+		<table class="table-Tv">
+			<thead>
+				<tr>
+					<th></th>
+					<th>前缀</th>
+					<th>后缀</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th>class</th>
+					<td>table-</td>
+					<td>Tv</td>
+				</tr>
+				<tr>
+					<th>实例</th>
+					<td>小明</td>
+					<td>小红</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<th>说明</th>
+					<td>只有竖线</td>
+					<td></td>
+				</tr>
+			</tfoot>
+		</table>
+		<table class="table-Tn">
+			<thead>
+				<tr>
+					<th></th>
+					<th>前缀</th>
+					<th>后缀</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th>class</th>
+					<td>table-</td>
+					<td>Tn</td>
+				</tr>
+				<tr>
+					<th>实例</th>
+					<td>小明</td>
+					<td>小红</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<th>说明</th>
+					<td>横竖交错</td>
+					<td></td>
+				</tr>
+			</tfoot>
+		</table>
+		<table class="table-Tw">
+			<thead>
+				<tr>
+					<th></th>
+					<th>前缀</th>
+					<th>后缀</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th>class</th>
+					<td>table-</td>
+					<td>Tw</td>
+				</tr>
+				<tr>
+					<th>实例</th>
+					<td>小明</td>
+					<td>小红</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<th>说明</th>
+					<td>表格轮廓线</td>
+					<td></td>
+				</tr>
+			</tfoot>
+		</table>
+		<table class="table-TnTwTc">
+			<thead>
+				<tr>
+					<th></th>
+					<th>前缀</th>
+					<th>后缀</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th>class</th>
+					<td>table-</td>
+					<td>Tc</td>
+				</tr>
+				<tr>
+					<th>实例</th>
+					<td>小明</td>
+					<td>小红</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<th>说明</th>
+					<td>窄表格</td>
+					<td></td>
+				</tr>
+			</tfoot>
+		</table>
+		<table class="table-TnTwThc">
+			<thead>
+				<tr>
+					<th></th>
+					<th>前缀</th>
+					<th>后缀</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th>class</th>
+					<td>table-</td>
+					<td>Thc</td>
+				</tr>
+				<tr>
+					<th>实例</th>
+					<td>小明</td>
+					<td>小红</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<th>说明</th>
+					<td colspan="2">thead 中的 th 居中</td>
+				</tr>
+			</tfoot>
+		</table>
+		<table class="table-TnTwThr">
+			<thead>
+				<tr>
+					<th></th>
+					<th>前缀</th>
+					<th>后缀</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th>class</th>
+					<td>table-</td>
+					<td>Thr</td>
+				</tr>
+				<tr>
+					<th>实例</th>
+					<td>小明</td>
+					<td>小红</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<th>说明</th>
+					<td colspan="2">thead 中的 th 居右</td>
+				</tr>
+			</tfoot>
+		</table>
+		<table class="table-TnTwTbc">
+			<thead>
+				<tr>
+					<th></th>
+					<th>前缀</th>
+					<th>后缀</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th>class</th>
+					<td>table-</td>
+					<td>Tbc</td>
+				</tr>
+				<tr>
+					<th>实例</th>
+					<td>小明</td>
+					<td>小红</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<th>说明</th>
+					<td colspan="2">tbody 中的 th 居中</td>
+				</tr>
+			</tfoot>
+		</table>
+		<table class="table-TnTwTbr">
+			<thead>
+				<tr>
+					<th></th>
+					<th>前缀</th>
+					<th>后缀</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th>class</th>
+					<td>table-</td>
+					<td>Tbr</td>
+				</tr>
+				<tr>
+					<th>实例</th>
+					<td>小明</td>
+					<td>小红</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<th>说明</th>
+					<td colspan="2">tbody 中的 th 居右</td>
+				</tr>
+			</tfoot>
+		</table>
+		<table class="table-TnTwTfc">
+			<thead>
+				<tr>
+					<th></th>
+					<th>前缀</th>
+					<th>后缀</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th>class</th>
+					<td>table-</td>
+					<td>Tfc</td>
+				</tr>
+				<tr>
+					<th>实例</th>
+					<td>小明</td>
+					<td>小红</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<th>说明</th>
+					<td colspan="2">tfoot 中的 th 居中</td>
+				</tr>
+			</tfoot>
+		</table>
+		<table class="table-TnTwTfr">
+			<thead>
+				<tr>
+					<th></th>
+					<th>前缀</th>
+					<th>后缀</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th>class</th>
+					<td>table-</td>
+					<td>Tfr</td>
+				</tr>
+				<tr>
+					<th>实例</th>
+					<td>小明</td>
+					<td>小红</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<th>说明</th>
+					<td colspan="2">tfoot 中的 th 居右</td>
+				</tr>
+			</tfoot>
+		</table>
+		<table class="table-TnTwTs">
+			<thead>
+				<tr>
+					<th></th>
+					<th>前缀</th>
+					<th>后缀</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th>class</th>
+					<td>table-</td>
+					<td>Tfr</td>
+				</tr>
+				<tr>
+					<th>实例</th>
+					<td>小明</td>
+					<td>小红</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<th>说明</th>
+					<td colspan="2">tbody 背景色交错，只支持 IE9+ 及其他先进浏览器</td>
+				</tr>
+			</tfoot>
+		</table>
+		<table class="table-Tnb">
+			<thead>
+				<tr>
+					<th></th>
+					<th>前缀</th>
+					<th>后缀</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th>class</th>
+					<td>table-</td>
+					<td>Tnb</td>
+				</tr>
+				<tr>
+					<th>实例</th>
+					<td>小明</td>
+					<td>小红</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<th>说明</th>
+					<td colspan="2">没有线框的表格</td>
+				</tr>
+			</tfoot>
+		</table>
+	</div>
+	<h2 id="menus" class="mltitle">菜单</h2>
+	<p class="mltitleinfo">菜单</p>
+	<div class="wapper">
+		<p>一些菜单</p>
+		<div class="menus">
+			<div class="brand">
+				<a href="#" title="示例">一般示例</a>
+			</div>
+			<ul class="nav">
+				<li><a href="#" title="菜单1">菜单1</a></li>
+				<li><a href="#" title="菜单2">菜单2</a></li>
+				<li><a href="#" title="菜单3">菜单3</a></li>
+				<li><a href="#" title="菜单4">菜单4</a></li>
+				<li><a href="#" title="菜单5">菜单5</a></li>
+			</ul>
+			<form action="">
+				<input type="text" placeholder="请输入搜索信息……">
+				<button type="submit" class="btn">搜 索</button>
+			</form>
+			<div class="group-Pr">
+				<a href="" class="btn-Bgs" title="注册">注册</a>
+				<a href="" class="btn-Bgp" title="登录">登录</a>
+			</div>
+		</div>
+		<p>有下拉菜单</p>
+		<div class="menus">
+			<div class="brand">
+				<a href="#" title="示例">有下拉示例</a>
+			</div>
+			<ul class="nav">
+				<li><a href="#" title="一般菜单">一般菜单</a>
+					<ul class="submenu">
+						<li><a href="#" title="子菜单1">子菜单11</a></li>
+						<li><a href="#" title="子菜单2">子菜单12</a></li>
+						<li><a href="#" title="子菜单3">子菜单13</a></li>
+						<li><a href="#" title="子菜单4">子菜单14</a></li>
+						<li><a href="#" title="子菜单5">子菜单15</a></li>
+					</ul>
+				</li>
+				<li><a href="#" title="有分割线菜单">有分割线菜单</a>
+					<ul class="submenu">
+						<li><a href="#" title="子菜单1">子菜单21</a></li>
+						<li><a href="#" title="子菜单2">子菜单22</a></li>
+						<li class="listline"></li>
+						<li><a href="#" title="子菜单2">子菜单22</a></li>
+						<li><a href="#" title="子菜单1">子菜单21</a></li>
+						<li class="listline"></li>
+						<li><a href="#" title="子菜单2">子菜单22</a></li>
+					</ul>
+				</li>
+				<li><a href="#" title="有标题的菜单">有标题的菜单</a>
+					<ul class="submenu">
+						<li class="listhead">标题1</li>
+						<li><a href="#" title="子菜单2">子菜单32</a></li>
+						<li><a href="#" title="子菜单3">子菜单33</a></li>
+						<li class="listhead">标题2</li>
+						<li><a href="#" title="子菜单1">子菜单31</a></li>
+						<li><a href="#" title="子菜单2">子菜单32</a></li>
+						<li><a href="#" title="子菜单3">子菜单33</a></li>
+					</ul>
+				</li>
+				<li><a href="#" title="圆角菜单">圆角菜单（IE9+）</a>
+					<ul class="submenu-Bdr">
+						<li><a href="#" title="子菜单1">子菜单41</a></li>
+						<li><a href="#" title="子菜单2">子菜单42</a></li>
+						<li><a href="#" title="子菜单3">子菜单43</a></li>
+						<li><a href="#" title="子菜单4">子菜单44</a></li>
+						<li><a href="#" title="子菜单5">子菜单45</a></li>
+					</ul>
+				</li>
+				<li><a href="#" title="反向菜单">反向菜单</a>
+					<ul class="submenu-Rev">
+						<li><a href="#" title="子菜单1">子菜单51</a></li>
+						<li><a href="#" title="子菜单2">子菜单52</a></li>
+						<li><a href="#" title="子菜单3">子菜单53</a></li>
+						<li><a href="#" title="子菜单4">子菜单54</a></li>
+						<li><a href="#" title="子菜单5">子菜单55</a></li>
+					</ul>
+				</li>
+				<li><a href="#" title="菜单5">有多级下拉</a>
+					<ul class="submenu">
+						<li><a href="#" title="子菜单1">子菜单51</a></li>
+						<li><a href="#" title="有下一级菜单">有下一级菜单</a>
+							<ul class="submenu">
+								<li><a href="#" title="子菜单1">子菜单51</a></li>
+								<li><a href="#" title="子菜单2">子菜单52</a></li>
+								<li><a href="#" title="有下一级菜单">有下一级菜单</a>
+									<ul class="submenu">
+										<li><a href="#" title="子菜单1">子菜单51</a></li>
+										<li><a href="#" title="子菜单2">子菜单52</a></li>
+										<li><a href="#" title="子菜单3">子菜单53</a></li>
+										<li><a href="#" title="子菜单4">子菜单54</a></li>
+									</ul>
+								</li>
+								<li><a href="#" title="子菜单4">子菜单54</a></li>
+							</ul>
+						</li>
+						<li><a href="#" title="子菜单3">子菜单53</a></li>
+						<li><a href="#" title="子菜单4">子菜单54</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<p>竖着的菜单</p>
+		<div class="row">
+			<div class="menus-SidSm03" style="margin-right:6px;">
+				<div class="brand">
+					<a href="" title>菜单示例1</a>
+				</div>
+				<ul class="nav">
+					<li><a href="" title="菜单1">菜单1</a></li>
+					<li><a href="" title="菜单2">菜单2</a></li>
+					<li><a href="" title="菜单3">菜单3</a></li>
+					<li><a href="" title="菜单4">菜单4</a></li>
+					<li><a href="" title="菜单5">菜单5</a></li>
+				</ul>
+			</div>
+			<div class="menus-SidSm03" style="margin-right:6px;">
+				<div class="brand">
+					<a href="" title>菜单示例2</a>
+				</div>
+				<ul class="nav">
+					<li><a href="" title="菜单1">菜单1</a></li>
+					<li><a href="" title="菜单2">菜单2</a></li>
+					<li class="listline"></li>
+					<li><a href="" title="菜单3">菜单3</a></li>
+					<li><a href="" title="菜单4">菜单4</a></li>
+					<li><a href="" title="菜单5">菜单5</a></li>
+					<li class="listline"></li>
+					<li><a href="" title="菜单6">菜单6</a></li>
+				</ul>
+			</div>
+			<div class="menus-SidSm03" style="margin-right:6px;">
+				<div class="brand">
+					<a href="" title>菜单示例2</a>
+				</div>
+				<ul class="nav">
+					<li class="listhead">标题1</li>
+					<li><a href="" title="菜单1">菜单1</a></li>
+					<li><a href="" title="菜单2">菜单2</a></li>
+					<li><a href="" title="菜单3">菜单3</a></li>
+					<li class="listhead">标题2</li>
+					<li><a href="" title="菜单5">菜单5</a></li>
+					<li><a href="" title="菜单6">菜单6</a></li>
+				</ul>
+			</div>
+		</div>
+		<p>竖着的带子菜单的菜单</p>
+		<div class="row">
+			<div class="menus-SidSm03">
+				<div class="brand">
+					<a href="" title>菜单示例2</a>
+				</div>
+				<ul class="nav">
+					<li><a href="" title="一般子菜单">一般子菜单</a>
+						<ul class="submenu">
+							<li><a href="#" title="子菜单51">子菜单51</a></li>
+							<li><a href="#" title="子菜单52">子菜单52</a></li>
+							<li><a href="#" title="子菜单53">子菜单53</a></li>
+							<li><a href="#" title="子菜单54">子菜单54</a></li>
+						</ul>
+					</li>
+					<li><a href="" title="分类子菜单">有分割线子菜单</a>
+						<ul class="submenu">
+							<li><a href="#" title="子菜单51">子菜单51</a></li>
+							<li><a href="#" title="子菜单52">子菜单52</a></li>
+							<li class="listline"></li>
+							<li><a href="#" title="子菜单53">子菜单53</a></li>
+							<li class="listline"></li>
+							<li><a href="#" title="子菜单54">子菜单54</a></li>
+						</ul>
+					</li>
+					<li><a href="" title="菜单3">有标题的子菜单</a>
+						<ul class="submenu">
+							<li class="listhead">标题1</li>
+							<li><a href="#" title="子菜单51">子菜单51</a></li>
+							<li><a href="#" title="子菜单52">子菜单52</a></li>
+							<li class="listhead">标题2</li>
+							<li><a href="#" title="子菜单53">子菜单53</a></li>
+							<li><a href="#" title="子菜单54">子菜单54</a></li>
+							<li><a href="#" title="子菜单55">子菜单55</a></li>
+						</ul>
+					</li>
+					<li><a href="" title="圆角菜单">圆角菜单</a>
+						<ul class="submenu-Bdr">
+							<li><a href="#" title="子菜单51">子菜单51</a></li>
+							<li><a href="#" title="子菜单52">子菜单52</a></li>
+							<li><a href="#" title="子菜单53">子菜单53</a></li>
+							<li><a href="#" title="子菜单54">子菜单54</a></li>
+							<li><a href="#" title="子菜单55">子菜单55</a></li>
+						</ul>
+					</li>
+					<li><a href="" title="反向菜单">反向菜单</a>
+						<ul class="submenu-Rev">
+							<li><a href="#" title="子菜单51">子菜单51</a></li>
+							<li><a href="#" title="子菜单52">子菜单52</a></li>
+							<li><a href="#" title="子菜单53">子菜单53</a></li>
+							<li><a href="#" title="子菜单54">子菜单54</a></li>
+							<li><a href="#" title="子菜单55">子菜单55</a></li>
+						</ul>
+					</li>
+					<li><a href="" title="多级子菜单">多级子菜单</a>
+						<ul class="submenu">
+							<li><a href="#" title="子菜单1">子菜单51</a></li>
+							<li><a href="#" title="有下一级菜单">有下一级菜单</a>
+								<ul class="submenu">
+									<li><a href="#" title="子菜单1">子菜单51</a></li>
+									<li><a href="#" title="子菜单2">子菜单52</a></li>
+									<li><a href="#" title="有下一级菜单">有下一级菜单</a>
+										<ul class="submenu">
+											<li><a href="#" title="子菜单1">子菜单51</a></li>
+											<li><a href="#" title="子菜单2">子菜单52</a></li>
+											<li><a href="#" title="子菜单3">子菜单53</a></li>
+											<li><a href="#" title="子菜单4">子菜单54</a></li>
+										</ul>
+									</li>
+									<li><a href="#" title="子菜单4">子菜单54</a></li>
+								</ul>
+							</li>
+							<li><a href="#" title="子菜单3">子菜单53</a></li>
+							<li><a href="#" title="子菜单4">子菜单54</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<p>分页菜单</p>
+		<div class="page">
+			<ul class="group">
+				<li><a href="" title="上一页">上一页</a></li>
+				<li><a href="" title="1">1</a></li>
+				<li><a href="" title="2">2</a></li>
+				<li><a href="" title="3">3</a></li>
+				<li class="active"><a href="" title="20">20</a></li>
+				<li><a href="" title="24">24</a></li>
+				<li><a href="" title="28">28</a></li>
+				<li class="active"><span>80</span></li>
+				<li><a href="" title="99">99</a></li>
+				<li><a href="" title="888">888</a></li>
+				<li><a href="" title="下一页">下一页</a></li>
+			</ul>
+			<input class="btn" type="submit" value="转到第">
+			<input style="width: 20px;" type="text" value=""> 页
+		</div>
+		<p>合并的分页菜单</p>
+		<div class="page">
+			<ul class="group-Line">
+				<li><a href="#" title="第一页">第一页</a></li>
+				<li><a href="#" title="上一页">上一页</a></li>
+			</ul>
+			<ul class="group-Line">
+				<li><a href="#" title="1">1</a></li>
+				<li><a href="#" title="2">2</a></li>
+				<li><a href="#" title="3">3</a></li>
+				<li class="active"><span>20</span></li>
+				<li><a href="#" title="24">24</a></li>
+				<li><a href="#" title="28">28</a></li>
+				<li><a href="#" title="80">80</a></li>
+				<li><a href="#" title="99">99</a></li>
+				<li><a href="#" title="888">888</a></li>
+			</ul>
+			<ul class="group-Line">
+				<li><a href="#" title="下一页">下一页</a></li>
+				<li><a href="#" title="最后页">最后页</a></li>
+			</ul>
+			<div class="group-Line">
+				<input class="btn" type="submit" value="转到第">
+				<input style="width: 20px;" type="text" value="">
+				<span class="addon">页</span>
+			</div>
+		</div>
+	</div>
+	<h2 id="connect" class="mltitle">联系方式</h2>
+	<p class="mltitleinfo">各种联系方式</p>
+	<div class="wapper">
+		<p>这里不是任何样式，仅仅是联系方式而已。好吧，目前没有联系方式，欧耶！！</p>
+	</div>
+</div>
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/prism.js"></script>
+<script type="text/javascript" src="js/likeui.js"></script>
+
 </body>
 </html>

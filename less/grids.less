@@ -1,0 +1,140 @@
+//网格布局
+.wapper {width: 98%;padding:1%;.clearfix}
+@media (min-width: @screen-lg-desktop) {
+	.wapper {width: 1140px;margin:0 auto;}
+}
+.row {.clearfix}
+[class|="span"] {
+	> .group {
+		position: relative;
+		display: block;
+		margin:0 6px;
+		&:before,
+		&:after {
+			display: table;
+			content: "";
+			line-height: 0;
+			clear: both;
+		}
+	}
+}
+
+[class*="-"][class*="Sl"],
+[class*="-"][class*="Sm"],
+[class*="-"][class*="Ss"],
+[class*="-"][class*="Sx"]
+{position: relative;}
+
+[class|="span"][class*="Sx"]
+{float: left;}
+[class*="-"][class*="Sx01"]
+{width: percentage(1 / @grid-columns);}
+[class*="-"][class*="Sx02"]
+{width: percentage(2 / @grid-columns);}
+[class*="-"][class*="Sx03"]
+{width: percentage(3 / @grid-columns);}
+[class*="-"][class*="Sx04"]
+{width: percentage(4 / @grid-columns);}
+[class*="-"][class*="Sx05"]
+{width: percentage(5 / @grid-columns);}
+[class*="-"][class*="Sx06"]
+{width: percentage(6 / @grid-columns);}
+[class*="-"][class*="Sx07"]
+{width: percentage(7 / @grid-columns);}
+[class*="-"][class*="Sx08"]
+{width: percentage(8 / @grid-columns);}
+[class*="-"][class*="Sx09"]
+{width: percentage(9 / @grid-columns);}
+[class*="-"][class*="Sx10"]
+{width: percentage(10 / @grid-columns);}
+[class*="-"][class*="Sx11"]
+{width: percentage(11 / @grid-columns);}
+[class*="-"][class*="Sx12"]
+{width: 100%;}
+
+@media (min-width: @screen-tablet) {
+	[class|="span"][class*="Ss"]
+	{float: left;}
+	[class*="-"][class*="Ss01"]
+	{width: percentage(1 / @grid-columns);}
+	[class*="-"][class*="Ss02"]
+	{width: percentage(2 / @grid-columns);}
+	[class*="-"][class*="Ss03"]
+	{width: percentage(3 / @grid-columns);}
+	[class*="-"][class*="Ss04"]
+	{width: percentage(4 / @grid-columns);}
+	[class*="-"][class*="Ss05"]
+	{width: percentage(5 / @grid-columns);}
+	[class*="-"][class*="Ss06"]
+	{width: percentage(6 / @grid-columns);}
+	[class*="-"][class*="Ss07"]
+	{width: percentage(7 / @grid-columns);}
+	[class*="-"][class*="Ss08"]
+	{width: percentage(8 / @grid-columns);}
+	[class*="-"][class*="Ss09"]
+	{width: percentage(9 / @grid-columns);}
+	[class*="-"][class*="Ss10"]
+	{width: percentage(10 / @grid-columns);}
+	[class*="-"][class*="Ss11"]
+	{width: percentage(11 / @grid-columns);}
+	[class*="-"][class*="Ss12"]
+	{width: 100%;}
+}
+
+@media (min-width: @screen-desktop) {
+	[class|="span"][class*="Sm"]
+	{float: left;}
+	[class*="-"][class*="Sm01"]
+	{width: percentage(1 / @grid-columns);}
+	[class*="-"][class*="Sm02"]
+	{width: percentage(2 / @grid-columns);}
+	[class*="-"][class*="Sm03"]
+	{width: percentage(3 / @grid-columns);}
+	[class*="-"][class*="Sm04"]
+	{width: percentage(4 / @grid-columns);}
+	[class*="-"][class*="Sm05"]
+	{width: percentage(5 / @grid-columns);}
+	[class*="-"][class*="Sm06"]
+	{width: percentage(6 / @grid-columns);}
+	[class*="-"][class*="Sm07"]
+	{width: percentage(7 / @grid-columns);}
+	[class*="-"][class*="Sm08"]
+	{width: percentage(8 / @grid-columns);}
+	[class*="-"][class*="Sm09"]
+	{width: percentage(9 / @grid-columns);}
+	[class*="-"][class*="Sm10"]
+	{width: percentage(10 / @grid-columns);}
+	[class*="-"][class*="Sm11"]
+	{width: percentage(11 / @grid-columns);}
+	[class*="-"][class*="Sm12"]
+	{width: 100%;}
+}
+
+@media (min-width: @screen-lg-desktop) {
+	[class|="span"][class*="Sl"]
+	{float: left;}
+	[class*="-"][class*="Sl01"]
+	{width: percentage(1 / @grid-columns);}
+	[class*="-"][class*="Sl02"]
+	{width: percentage(2 / @grid-columns);}
+	[class*="-"][class*="Sl03"]
+	{width: percentage(3 / @grid-columns);}
+	[class*="-"][class*="Sl04"]
+	{width: percentage(4 / @grid-columns);}
+	[class*="-"][class*="Sl05"]
+	{width: percentage(5 / @grid-columns);}
+	[class*="-"][class*="Sl06"]
+	{width: percentage(6 / @grid-columns);}
+	[class*="-"][class*="Sl07"]
+	{width: percentage(7 / @grid-columns);}
+	[class*="-"][class*="Sl08"]
+	{width: percentage(8 / @grid-columns);}
+	[class*="-"][class*="Sl09"]
+	{width: percentage(9 / @grid-columns);}
+	[class*="-"][class*="Sl10"]
+	{width: percentage(10 / @grid-columns);}
+	[class*="-"][class*="Sl11"]
+	{width: percentage(11 / @grid-columns);}
+	[class*="-"][class*="Sl12"]
+	{width: 100%;}
+}

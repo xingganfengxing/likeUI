@@ -1,0 +1,21 @@
+body {font: 14px/1.5 "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei UI", "Microsoft YaHei", SimHei, "\5B8B\4F53", simsun, sans-serif;}
+pre[class*="language-"]:before,
+pre[class*="language-"]:after {display:none;}
+code[class*="language"] {overflow:auto;}
+/**-------------------------结构----------------------------**/
+#mlsidemenu {position:absolute;top:0;bottom:0;width:160px;background-color:#191818;overflow-y:auto;}
+#mlsidemenu ul {list-style:outside none;padding-left:0;margin-left:0;}
+#mlsidemenu li {height:46px;line-height:46px;border-bottom:1px solid #333;}
+#mlsidemenu li a:link,#mlsidemenu li a:visited {display:block;font-size:18px;color:#ccc;text-decoration:none;padding-left:30px;}
+#mlsidemenu li a:hover,#mlsidemenu li a:active {color:#fff;background-color:#333;}
+#mlsidemenu li:first-child a {font-size:26px;font-weight:bold;}
+#mlcontent {position:absolute;left:160px;top:0;right:0;bottom:0;overflow-y:auto;}
+
+/**-------------------------mlcontent----------------------------**/
+#logo {font-size:80px;text-align:center;}
+#webinfo {font-size:30px;color:#aaa;text-align:center;border-bottom:2px solid #ccc;}
+.mltitle {font-size:50px;color:#666;text-align:center;}
+.mltitleinfo {font-size:26px;color:#bbb;text-align:center;border-bottom:2px solid #ddd;}
+
+
+

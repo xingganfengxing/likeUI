@@ -1,0 +1,93 @@
+//基础样式
+//------------------------------------------------------------------
+.clearfix {
+	*zoom: 1;
+	&:before,
+	&:after {
+		display: table;
+		content: "";
+		line-height: 0;
+		clear: both;
+	}
+}
+
+[class|="-"][class*="Clr"] {.clearfix}
+
+.tab-focus() {
+  // Default
+  outline: thin dotted #333;
+  // Webkit
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+// Drop shadows
+.box-shadow(@shadow) {
+  -webkit-box-shadow: @shadow; // iOS <4.3 & Android <4.1
+          box-shadow: @shadow;
+}
+
+// User select
+// For selecting text on the page
+.user-select(@select) {
+  -webkit-user-select: @select;
+     -moz-user-select: @select;
+      -ms-user-select: @select; // IE10+
+       -o-user-select: @select;
+          user-select: @select;
+}
+
+// Opacity
+.opacity(@opacity) {
+  opacity: @opacity;
+  // IE8 filter
+  @opacity-ie: (@opacity * 100);
+  filter: ~"alpha(opacity=@{opacity-ie})";
+}
+
+//组
+//---------------------------------------------
+.group,[class="group"] {
+	position: relative;
+	display: inline-block;
+	*display: inline;
+	*zoom:1;
+	vertical-align: middle;
+	&:before,
+	&:after {
+		display: table;
+		content: "";
+		line-height: 0;
+		clear: both;
+	}
+}
+
+//背景色
+//---------------------------------------------
+[class*="-"][class*="Bgp"] {color:#fff;background-color:@bgc-primary;border-color:darken(@bgc-primary, 5%);}
+[class*="-"][class*="Bgs"] {color:#fff;background-color:@bgc-success;border-color:darken(@bgc-success, 5%);}
+[class*="-"][class*="Bgw"] {color:#fff;background-color:@bgc-warning;border-color:darken(@bgc-warning, 5%);}
+[class*="-"][class*="Bgd"] {color:#fff;background-color:@bgc-danger;border-color:darken(@bgc-danger, 5%);}
+[class*="-"][class*="Bgi"] {color:#fff;background-color:@bgc-info;border-color:darken(@bgc-info, 5%);}
+
+[class*="-"][class*="Bgpl"] {color:@primary-text;background-color:@primary-bg;border-color:@primary-border;}
+[class*="-"][class*="Bgsl"] {color:@success-text;background-color:@success-bg;border-color:@success-border;}
+[class*="-"][class*="Bgwl"] {color:@warning-text;background-color:@warning-bg;border-color:@warning-border;}
+[class*="-"][class*="Bgdl"] {color:@danger-text;background-color:@danger-bg;border-color:@danger-border;}
+[class*="-"][class*="Bgil"] {color:@info-text;background-color:@info-bg;border-color:@info-border;}
+
+//位置
+//---------------------------------------------
+.pl,[class*="-"][class*="Pl"] {float: left;}
+.pr,[class*="-"][class*="Pr"] {float: right;}
+
+//边线
+//---------------------------------------------
+
+//圆角
+//---------------------------------------------
+[class*="-"][class*="Bdr"] {border-radius: 4px;}
+
+
+
+

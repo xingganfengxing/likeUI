@@ -1,0 +1,199 @@
+//菜单
+.menus,[class|="menus"] {
+	.clearfix;
+	border: 1px solid #e7e7e7;
+	background-color:#f8f8f8;
+	.brand,[class|="brand"] {
+		float: left;
+		border-right: 1px solid #e7e7e7;
+		background-color:#f0f0f0;
+		a:link,a:visited {
+			position: relative;
+			display: block;
+			color:#777;
+			font-size: 18px;
+			font-weight: bold;
+			line-height: 21px;
+			text-decoration: none;
+			padding: 10px 20px;
+		}
+		a:hover,a:active {
+			color:#333;
+		}
+	}
+
+	.nav,[class|="nav"] {
+		padding:0;margin:0;
+		float: left;
+		list-style:none outside none;
+		> li {
+			float: left;
+			position: relative;
+			a:link,a:visited {
+				position: relative;
+				display: block;
+				*zoom:1;//去除IE7顶部间隙
+				color:#777;
+				text-decoration: none;
+				padding: 10px 15px;
+			}
+			a:hover,a:active {
+				color:#333;
+				background-color: #e7e7e7;
+			}
+
+			.submenu,[class|="submenu"] {
+				padding:0;margin:0;
+				position: absolute;
+				left:0;
+				top:100%;
+				z-index: 950;
+				background-color: #FFFFFF;
+				border: 1px solid #ccc;
+				box-shadow: 0 6px 12px rgba(0, 0, 0, 0.176);
+				display: none;
+				float: left;
+				font-size: 14px;
+				list-style: none outside none;
+				min-width: 160px;
+				*width:1px;//去除IE7中li不能填充满问题
+				white-space:nowrap;
+				&[class*="Rev"] {left:auto;right:0;}
+				li {position: relative;
+					a {padding: 6px 15px;}
+					&.listline {
+						height: 1px;
+						*font-size: 0;
+						margin: 0 4px;
+						*margin-bottom:-1px;
+						overflow: hidden;
+						background-color: #ddd;
+					}
+					&.listhead,&[class|="listhead"] {
+						position: relative;
+						display: block;
+						color:#777;
+						font-weight: bold;
+						text-decoration: none;
+						padding: 8px 11px 2px;
+						margin: 0 4px;
+						border-bottom:1px solid #ddd;
+					}
+					&:hover {
+						> .submenu,> [class|="submenu"] {display:block;}
+					}
+				}
+				.submenu,[class|="submenu"] {top:0;left:100%;}
+			}
+			&:hover {
+				> .submenu,> [class|="submenu"] {display:block;}
+			}
+		}
+	}
+
+	&[class*="Sid"] {
+		float: left;
+		.brand,[class|="brand"] {
+			float: none;
+			border-right:0 none;
+			border-bottom: 1px solid #e7e7e7;
+		}
+		.nav,[class|="nav"] {
+			float:none;
+			> li {
+				float:none;
+				&.listline,&[class|="listline"] {
+					height: 1px;
+					*font-size: 0;
+					margin: 0 4px;
+					*margin-bottom:-1px;
+					overflow: hidden;
+					background-color: #ddd;
+				}
+				&.listhead,&[class|="listhead"] {
+					position: relative;
+					display: block;
+					color:#777;
+					font-weight: bold;
+					text-decoration: none;
+					padding: 14px 11px 4px;
+					margin: 0 4px;
+					border-bottom:1px solid #ddd;
+				}
+				.submenu,[class|="submenu"] {
+					top:0;left:100%;
+					&[class*="Rev"] {top:auto;bottom:0;}
+				}
+			}
+
+		}
+	}
+
+	form,.group,[class|="group"] {float: left;padding:0 15px;margin-top:3px;}
+}
+
+.page,[class|="page"] {
+	padding:10px;
+	text-align: center;
+	.group,[class|="group"] {
+		list-style: none outside none;
+		padding:0 1px;
+		*padding:0 3px;
+		margin:0;
+		li {
+			float: left;
+			padding:0 3px;
+			a:link,a:visited {
+				color:#333;
+				display: block;
+				line-height: 20px;
+				padding:6px 10px;
+				text-decoration: none;
+				min-width:20px;
+				background-color: #fff;
+				border: 1px solid #ccc;
+				border-radius: 4px;
+				white-space:nowrap;
+			}
+			a:hover,a:active {
+				background-color:#ebebeb;
+				border-color: #adadad;
+			}
+			&.active {
+				:first-child,
+				a {
+					color:#fff;
+					display: block;
+					line-height: 20px;
+					padding:6px 10px;
+					min-width:20px;
+					border: 1px solid #ccc;
+					border-radius: 4px;
+					background-color:@bgc-primary;
+					border-color:darken(@bgc-primary, 5%);
+					white-space:nowrap;
+				}
+			}
+		}
+		&[class*="Line"] {
+			margin-left: 1px;
+			li {
+				padding:0;
+				margin-left: -1px;
+				a,:first-child {border-radius: 0;}
+				&:first-child a {
+					border-top-left-radius: 4px;
+					border-bottom-left-radius: 4px;
+				}
+				&:last-child a {
+					border-top-right-radius: 4px;
+					border-bottom-right-radius: 4px;
+				}
+			}
+		}
+	}
+}
+
+
+
+
